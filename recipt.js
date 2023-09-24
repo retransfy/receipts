@@ -32,15 +32,15 @@ let copyButton = document.getElementById("copyButton");
 
       if (formattedTime && textareaValue && theCurrency === "FCFA") {
         receiptText = `
-        <p>Transaction successful</p>
-        <p>Date: ${formattedDate} | Time: ${formattedTime}</p>
-        <p>Sender: ${sender}</p>
-        <p>Receiver: ${receiver}</p>
-        <p>Amount received: ${amountToReceiveInput.toLocaleString("fr-FR")} FCFA</p>
-        <p>Amount sent: ${amountToSendInput.toFixed(2)} GHS</p>
-        <p>Fee: ${feeInput.toFixed(2)} GHS</p>
-        <p>Total Amount: ${totalAmountInput.toFixed(2)} GHS</p>
-        <p>TRX ID: ${trxId}</p>`;
+<p>Transaction successful</p>
+<p>Date: ${formattedDate} | Time: ${formattedTime}</p>
+<p>Sender: ${sender}</p>
+<p>Receiver: ${receiver}</p>
+<p>Amount received: ${amountToReceiveInput.toLocaleString("fr-FR")} FCFA</p>
+<p>Amount sent: ${amountToSendInput.toFixed(2)} GHS</p>
+<p>Fee: ${feeInput.toFixed(2)} GHS</p>
+<p>Total Amount: ${totalAmountInput.toFixed(2)} GHS</p>
+<p>TRX ID: ${trxId}</p>`;
         // Display receipt
         document.getElementById("receiptOutput").innerHTML = receiptText;
         copyButton.style.display = "block";
@@ -51,15 +51,15 @@ let copyButton = document.getElementById("copyButton");
         document.getElementById("currency").style.display = "none";
       } else if (formattedTime && textareaValue && theCurrency === "GHS") {
         receiptText = `
-        <p>Transaction successful</p>
-        <p>Date: ${formattedDate} | Time: ${formattedTime}</p>
-        <p>Sender: ${sender}</p>
-        <p>Receiver: ${receiver}</p>
-        <p>Amount received: ${amountToReceiveInput.toFixed(2)} GHS</p>
-        <p>Amount sent: ${amountToSendInput.toLocaleString("fr-FR")} FCFA</p>
-        <p>Fee: ${feeInput.toLocaleString("fr-FR")} FCFA</p>
-        <p>Total Amount: ${totalAmountInput.toLocaleString("fr-FR")} FCFA</p>
-        <p>TRX ID: ${trxId}</p>`;
+<p>Transaction successful</p>
+<p>Date: ${formattedDate} | Time: ${formattedTime}</p>
+<p>Sender: ${sender}</p>
+<p>Receiver: ${receiver}</p>
+<p>Amount received: ${amountToReceiveInput.toFixed(2)} GHS</p>
+<p>Amount sent: ${amountToSendInput.toLocaleString("fr-FR")} FCFA</p>
+<p>Fee: ${feeInput.toLocaleString("fr-FR")} FCFA</p>
+<p>Total Amount: ${totalAmountInput.toLocaleString("fr-FR")} FCFA</p>
+<p>TRX ID: ${trxId}</p>`;
         // Display receipt
         document.getElementById("receiptOutput").innerHTML = receiptText;
         copyButton.style.display = "block";
