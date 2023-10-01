@@ -6,31 +6,41 @@
     <title>Receipt</title>
     <link rel="stylesheet" href="receipt.css" />
   </head>
-  <div id="container">
-    <img src="Logo.png" alt="Logo" class="logo" />
-    <p id="titled">
-      Sender-Name-Receiver-Name<br />
-      AmountReceived-AmountSent-Fee-TRX ID
-    </p>
+  <body>
+    <div id="container">
+      <img src="Logo.png" alt="Logo" class="logo" />
+      <p id="titled">
+        Sender-Name-Receiver-Name<br />
+        AmountReceived-AmountSent-Fee-TRX ID
+      </p>
 
-    <form action="" id="receipt">
-      <div class="timeCurrency">
-        <input type="time" id="theTime" step="1" lang="en" />
-        <select name="currency" id="currency">
-          <option value="FCFA">FCFA</option>
-          <option value="GHS">GHS</option>
-        </select>
-      </div>
-      <textarea name="receiptarea" id="receiptarea" cols="35" rows="8" autofocus></textarea>
+      <form action="" id="receipt">
+        <div class="timeCurrency">
+          <input type="time" id="theTime" step="1" lang="en" />
+          <select name="currency" id="currency">
+            <option value="FCFA">FCFA</option>
+            <option value="GHS">GHS</option>
+          </select>
+        </div>
+        <!-- <div class="senderReceiver">
+          <select name="noSender" id="noSender" onchange="changeToNosender()">
+            <option value="SENDER">Sender</option>
+            <option value="NOSENDER">No sender</option>
+          </select>
+          <select name="noReceiver" id="noReceiver">
+            <option value="RECEIVER">Receiver</option>
+            <option value="NORECEIVER">No receiver</option>
+          </select>
+        </div> -->
+        <textarea name="receiptarea" id="receiptarea" cols="35" rows="8" autofocus></textarea>
+        <br />
+        <button type="submit" id="create">Create receipt</button>
+      </form>
+      <div id="receiptOutput"></div>
+      <button type="button" id="copyButton" style="display: none">Copy Receipt</button>
       <br />
-      <button type="submit" id="create">Create receipt</button>
-    </form>
-    <div id="receiptOutput"></div>
-    <button type="button" id="copyButton" style="display: none">Copy Receipt</button>
-    <br />
-    <a href="index.html"><button type="button" id="goBack" style="display: none">Go Back</button></a>
-  </div>
-  <script src="recipt.js"></script>
-
-  <body></body>
+      <a href="index.html"><button type="button" id="goBack" style="display: none">Go Back</button></a>
+    </div>
+    <script src="recipt.js"></script>
+  </body>
 </html>
