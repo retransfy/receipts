@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="receipt.css" />
   </head>
   <div id="container">
+    <img src="Logo.png" alt="Logo" class="logo" />
     <p id="titled">
-      Sender-Receiver-Amount received<br />
-      Amount sent-Fee-Total-TRX ID
+      Sender-Name-Receiver-Name<br />
+      AmountReceived-AmountSent-Fee-TRX ID
     </p>
+
     <form action="" id="receipt">
       <div class="timeCurrency">
         <input type="time" id="theTime" step="1" lang="en" />
@@ -19,7 +21,7 @@
           <option value="GHS">GHS</option>
         </select>
       </div>
-      <textarea name="receiptarea" id="receiptarea" cols="35" rows="7" autofocus></textarea>
+      <textarea name="receiptarea" id="receiptarea" cols="35" rows="8" autofocus></textarea>
       <br />
       <button type="submit" id="create">Create receipt</button>
     </form>
