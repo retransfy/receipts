@@ -99,3 +99,15 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+
+  /* .senderReceiver{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .senderReceiver select {
+    background-color: aliceblue;
+  } */
