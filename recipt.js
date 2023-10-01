@@ -3,7 +3,6 @@ let goBack = document.getElementById("goBack");
 
 document.getElementById("receipt").addEventListener("submit", function (event) {
 event.preventDefault();
-
 const textareaValue = document.getElementById("receiptarea").value;
 const lines = textareaValue.split("\n");
 
@@ -16,9 +15,10 @@ const amountToSend = lines[5].replace("Amount to Send: ", "");
 const fee = lines[6].replace("Fee: ", "");
 const trxId = lines[7].replace("TRX ID: ", "");
 
-const amountToReceiveInput = parseInt(amountToReceive);
-const amountToSendInput = parseInt(amountToSend);
-const feeInput = parseInt(fee);
+const amountToReceiveInput = parseFloat(amountToReceive);
+const amountToSendInput = parseFloat(amountToSend);
+const feeInput = parseFloat(fee);
+const amountSent = amountToSendInput - feeInput
 
 const currentDate = new Date();
 const day = String(currentDate.getDate()).padStart(2, "0"); 
@@ -48,8 +48,11 @@ const theCurrency = document.getElementById("currency").value;
 
 let receiptText = ``;
 
-if (formattedTime && textareaValue && theCurrency === "FCFA") {
 
+
+
+
+if (formattedTime && textareaValue && theCurrency === "FCFA") {
 receiptText = `<p>Transaction successful</p>
 <p>Date: ${formattedDate} | ${formattedTime}</p>
 <p>Sender: ${sender}</p>
@@ -57,11 +60,9 @@ receiptText = `<p>Transaction successful</p>
 <p>Receiver: ${receiver}</p>
 <p>(${receiverName.toUpperCase()})</p>
 <p>Amount received: ${amountToReceiveInput.toLocaleString("fr-FR")} FCFA</p>
-<p>Amount sent: ${amountToSendInput.toFixed(2)} GHS</p>
+<p>Amount sent: ${amountSent.toFixed(2)} GHS</p>
 <p>Fee: ${feeInput.toFixed(2)} GHS</p>
 <p>TRX ID: ${trxId}</p>`;
-
-
 
 document.getElementById("receiptOutput").innerHTML = receiptText;
 copyButton.style.display = "block";
@@ -73,8 +74,8 @@ document.getElementById("currency").style.display = "none";
 document.getElementById("titled").style.display = "none";
 } 
 
-else if (formattedTime && textareaValue && theCurrency === "GHS") {
 
+else if (formattedTime && textareaValue && theCurrency === "GHS") {
 receiptText = `<p>Transaction successful</p>
 <p>Date: ${formattedDate} | Time: ${formattedTime}</p>
 <p>Sender: ${sender}</p>
@@ -82,7 +83,7 @@ receiptText = `<p>Transaction successful</p>
 <p>Receiver: ${receiver}</p>
 <p>(${receiverName.toUpperCase()})</p>
 <p>Amount received: ${amountToReceiveInput.toFixed(2)} GHS</p>
-<p>Amount sent: ${amountToSendInput.toLocaleString("fr-FR")} FCFA</p>
+<p>Amount sent: ${amountSent.toLocaleString("fr-FR")} FCFA</p>
 <p>Fee: ${feeInput.toLocaleString("fr-FR")} FCFA</p>
 <p>TRX ID: ${trxId}</p>`;
 
@@ -96,6 +97,17 @@ document.getElementById("theTime").style.display = "none";
 document.getElementById("currency").style.display = "none";
 document.getElementById("titled").style.display = "none";
 }
+
+// document.getElementById("noSender").addEventListener("change", changeToNosender);
+
+// function changeToNosender() {
+//     const NoSender = document.getElementById("noSender").value;
+//     if (NoSender === "NOSENDER") {
+//         document.getElementById("receiptarea").rows = 7;
+//         alert("You win");
+//     }
+// }
+
 
 // Add a click event listener to the "Copy Receipt" button
 copyButton = document.getElementById("copyButton");
