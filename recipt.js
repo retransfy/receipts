@@ -77,7 +77,7 @@ document.getElementById("titled").style.display = "none";
 
 else if (formattedTime && textareaValue && theCurrency === "GHS") {
 receiptText = `<p>Transaction successful</p>
-<p>Date: ${formattedDate} | Time: ${formattedTime}</p>
+<p>Date: ${formattedDate} | ${formattedTime}</p>
 <p>Sender: ${sender}</p>
 <p>(${senderName.toUpperCase()})</p>
 <p>Receiver: ${receiver}</p>
