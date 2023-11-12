@@ -9,28 +9,33 @@
   <body>
     <div id="container">
       <img src="Logo.png" alt="Logo" class="logo" />
-      <p id="titled">
-        Sender-Name-Receiver-Name<br />
-        AmountReceived-AmountSent-Fee-TRX ID
-      </p>
 
-      <form action="" id="receipt">
-        <div class="timeCurrency">
-          <input type="time" id="theTime" step="1" lang="en" />
-          <select name="currency" id="currency">
+      <form action="" id="receiptForm">
+        <div class="timeCont">
+          <input type="time" id="theTime" required />
+          <select name="currency" id="currency" required>
             <option value="FCFA">FCFA</option>
             <option value="GHS">GHS</option>
           </select>
         </div>
-        <textarea name="receiptarea" id="receiptarea" cols="35" rows="8" autofocus></textarea>
+        <div class="inputCont">
+          <label for="amountReceived">Amount Received:</label>
+          <input type="number" id="amountReceived" required />
+          <label for="totalPaid">Total Paid:</label>
+          <input type="number" id="totalPaid" required />
+          <label for="fee">Transaction Fee:</label>
+          <input type="number" id="fee" required />
+          <label for="trxid">TRX ID:</label>
+          <input type="text" id="trxid" name="trxid" required />
+        </div>
         <br />
-        <button type="submit" id="create">Create receipt</button>
+        <button type="button" id="create">Get receipt</button>
       </form>
       <div id="receiptOutput"></div>
       <button type="button" id="copyButton" style="display: none">Copy Receipt</button>
       <br />
       <a href="index.html"><button type="button" id="goBack" style="display: none">Go Back</button></a>
     </div>
-    <script src="recipt.js"></script>
+    <script src="receipt.js"></script>
   </body>
 </html>
