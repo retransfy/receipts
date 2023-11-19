@@ -1,0 +1,115 @@
+body {
+    background-image: url("cover.jpg");
+    background-color: orange;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  #container {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgb(73, 73, 73, 0.3);
+    height: auto;
+  }
+
+  .timeCont {
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .inputCont {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ label {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(2, 94, 63);
+  margin-top: 10px;
+  font-weight: bold;
+
+ }
+
+  
+  input {
+    display: block;
+    border: none;
+    width: auto;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(73, 73, 73, 0.3);
+    background-color: azure;
+  }
+
+ 
+
+  select {
+    width: 100px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 2px 2px 4px rgb(73, 73, 73, 0.3);
+    background-color: rgb(248, 247, 164);
+  }
+
+  #create,
+  #copyButton {
+    background-color: darkred;
+    color: white;
+    padding: 5px;
+    border-style: none;
+    box-shadow: 2px 2px 4px rgb(73, 73, 73, 0.3);
+    cursor: pointer;
+  }
+
+  #receiptOutput {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+  }
+
+  #goBack {
+    display: block;
+    margin-top: 10px;
+    background-color: rgb(255, 196, 0);
+    padding: 10px;
+    border-style: none;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 4px rgb(73, 73, 73, 0.3);
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
