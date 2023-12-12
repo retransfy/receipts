@@ -18,7 +18,7 @@ let receiptText = "";
 if (Time && currency === "FCFA") {
 receiptText = `Transaction successful.
 You've just sent ${amountReceived.toLocaleString("fr-FR")} FCFA to 228${receiver.toUpperCase()} via Retransfy.
-${formattedDate} | ${Time} | Transaction ID: ${trxId}. You paid a total of GHS ${totalPaid.toFixed(2)}, including a GHS ${fee.toFixed(2)} transaction fee via -`;
+${formattedDate} | ${Time} | Transaction ID: ${trxId}. You paid a total of GHS ${totalPaid.toFixed(2)}, including a transaction fee of GHS ${fee.toFixed(2)} via -`;
 
 document.getElementById("receiptOutput").innerHTML = receiptText;
 document.getElementById("copyButton").style.display = "block";
