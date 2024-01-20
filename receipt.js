@@ -88,7 +88,7 @@ const totalPaid = transactionFee2 + amountToSend;
 let receiptText = "";
 if (Time && currency === "FCFATG") {
 receiptText = `Transaction successful.
-You've just sent ${receiveAmount.toLocaleString("fr-FR")} FCFA to 228${receiver.toUpperCase()} via Retransfy.
+You've just sent ${receiveAmount.toLocaleString("fr-FR")} FCFA to +228${receiver.toUpperCase()} via Retransfy.
 ${formattedDate} | ${Time} | Transaction ID: ${trxId}. You paid a total of GHS ${roundDecimal(totalPaid).toFixed(2)}, including a GHS ${transactionFee2.toFixed(2)} transaction fee via -`;
 
 document.getElementById("receiptOutput").innerHTML = receiptText;
@@ -99,7 +99,7 @@ document.getElementById("receiptForm").style.display = "none";
 } 
 else if (Time && currency === "FCFABN") {
 receiptText = `Transaction successful.
-You've just sent ${receiveAmount.toLocaleString("fr-FR")} FCFA to 229${receiver.toUpperCase()} via Retransfy.
+You've just sent ${receiveAmount.toLocaleString("fr-FR")} FCFA to +229${receiver.toUpperCase()} via Retransfy.
 ${formattedDate} | ${Time} | Transaction ID: ${trxId}. You paid a total of GHS ${roundDecimal(totalPaid).toFixed(2)}, including a GHS ${transactionFee2.toFixed(2)} transaction fee via -`;
 
 document.getElementById("receiptOutput").innerHTML = receiptText;
@@ -110,7 +110,7 @@ document.getElementById("receiptForm").style.display = "none";
 } 
 else if (Time && currency === "FCFACI") {
 receiptText = `Transaction successful.
-You've just sent ${receiveAmount.toLocaleString("fr-FR")} FCFA to 225${receiver.toUpperCase()} via Retransfy.
+You've just sent ${receiveAmount.toLocaleString("fr-FR")} FCFA to +225${receiver.toUpperCase()} via Retransfy.
 ${formattedDate} | ${Time} | Transaction ID: ${trxId}. You paid a total of GHS ${roundDecimal(totalPaid).toFixed(2)}, including a GHS ${transactionFee2.toFixed(2)} transaction fee via -`;
 
 document.getElementById("receiptOutput").innerHTML = receiptText;
@@ -122,7 +122,7 @@ document.getElementById("receiptForm").style.display = "none";
 
 else if (Time && currency === "FCFABF") {
 receiptText = `Transaction successful.
-You've just sent ${receiveAmount.toLocaleString("fr-FR")} FCFA to 226${receiver.toUpperCase()} via Retransfy.
+You've just sent ${receiveAmount.toLocaleString("fr-FR")} FCFA to +226${receiver.toUpperCase()} via Retransfy.
 ${formattedDate} | ${Time} | Transaction ID: ${trxId}. You paid a total of GHS ${roundDecimal(totalPaid).toFixed(2)}, including a GHS ${transactionFee2.toFixed(2)} transaction fee via -`;
 
 document.getElementById("receiptOutput").innerHTML = receiptText;
@@ -134,7 +134,7 @@ document.getElementById("receiptForm").style.display = "none";
 
 else if (Time && currency === "FCFASN") {
 receiptText = `Transaction successful.
-You've just sent ${receiveAmount.toLocaleString("fr-FR")} FCFA to 221${receiver.toUpperCase()} via Retransfy.
+You've just sent ${receiveAmount.toLocaleString("fr-FR")} FCFA to +221${receiver.toUpperCase()} via Retransfy.
 ${formattedDate} | ${Time} | Transaction ID: ${trxId}. You paid a total of GHS ${roundDecimal(totalPaid).toFixed(2)}, including a GHS ${transactionFee2.toFixed(2)} transaction fee via -`;
 
 document.getElementById("receiptOutput").innerHTML = receiptText;
