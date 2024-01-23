@@ -147,7 +147,7 @@ document.getElementById("receiptForm").style.display = "none";
 else if (Time && currency === "GHS") {
 receiptText = `Transaction successful.
 You've just sent GHS ${receiveAmount.toFixed(2)} to ${receiver.toUpperCase()} via Retransfy.
-${formattedDate} | ${Time} | Transaction ID: ${trxId}. You paid a total of ${Math.ceil(totalPaid.toLocaleString("fr-FR"))} FCFA, including a transaction fee of ${transactionFee2.toLocaleString("fr-FR")} FCFA via -`;
+${formattedDate} | ${Time} | Transaction ID: ${trxId}. You paid a total of ${Math.ceil(totalPaid).toLocaleString("fr-FR")} FCFA, including a transaction fee of ${transactionFee2.toLocaleString("fr-FR")} FCFA via -`;
 
 document.getElementById("receiptOutput").innerHTML = receiptText;
 document.getElementById("copyButton").style.display = "block";
