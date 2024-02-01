@@ -1,5 +1,5 @@
 body {
-    background-image: url("cover.jpg");
+    background-image: url("media/cover.jpg");
     background-color: orange;
     background-size: cover;
     display: flex;
