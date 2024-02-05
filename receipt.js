@@ -1,6 +1,6 @@
 
 document.getElementById("create").addEventListener("click", function () {
-let rate = 19.95;
+let rate = 20;
 let rate2 = rate - 1;
 const currentDate = new Date();
 const day = String(currentDate.getDate()).padStart(2, "0");
