@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receipt</title>
+    <link rel="stylesheet" href="receipt.css" />
+  </head>
+  <body>
+    <div id="container">
+      <img src="media/Logo.png" alt="Logo" class="logo" id="logo" />
+
+      <form action="" id="receiptForm">
+        <div class="timeCont">
+          <input type="time" id="theTime" required />
+          <select name="currency" id="currency" required>
+            <option value="FCFATG">To Togo</option>
+            <option value="FCFABN">To Benin</option>
+            <option value="FCFACI">To C.I</option>
+            <option value="FCFABF">To B.F</option>
+            <option value="FCFASN">To Senegal</option>
+            <option value="GHS">To Ghana</option>
+          </select>
+        </div>
+        <div class="inputCont">
+          <label for="receiver">Receiver</label>
+          <input type="text" id="receiver" required />
+          <label for="amountReceived">Amount Received:</label>
+          <input type="number" id="amountReceived" required />
+          <label for="trxid">TRX ID:</label>
+          <input type="text" id="trxid" name="trxid" required />
+        </div>
+        <br />
+        <button type="button" id="create">Get receipt</button>
+      </form>
+      <div id="receiptOutput"></div>
+      <button type="button" id="copyButton" style="display: none">Copy Receipt</button>
+      <br />
+      <a href="index.html"><button type="button" id="goBack" style="display: none">Home</button></a>
+    </div>
+    <script src="receipt.js"></script>
+  </body>
+</html>
