@@ -4,7 +4,7 @@ window.location.href = "complete.html";
 
 
 document.getElementById("create").addEventListener("click", function () {
-let rate = 20;
+let rate = 20.2;
 let rate2 = rate - 1;
 const currentDate = new Date();
 const day = String(currentDate.getDate()).padStart(2, "0");
