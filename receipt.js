@@ -26,10 +26,10 @@ if (receiveAmount >= ((rate * 1000) / rate) && receiveAmount <= ((150 * 1000) / 
 else if (receiveAmount >= ((151 * 1000) / rate) && receiveAmount <= ((500 * 1000) / rate)) { transactionFee2 = 10; }
 else if (receiveAmount >= ((501 * 1000) / rate) && receiveAmount <= ((800 * 1000) / rate)) { transactionFee2 = 15; }
 else if (receiveAmount >= ((801 * 1000) / rate) && receiveAmount <= ((1200 * 1000) / rate)) { transactionFee2 = 20; }
-else if (receiveAmount >= ((1201 * 1000) / rate) && receiveAmount <= ((2000 * 1000) / rate)) { transactionFee2 = 25; }
-else if (receiveAmount >= ((2001 * 1000) / rate) && receiveAmount <= ((5000 * 1000) / rate)) { transactionFee2 = 40; }
-else if (receiveAmount >= ((5001 * 1000) / rate) && receiveAmount <= ((8000 * 1000) / rate)) { transactionFee2 = 70; }
-else if (receiveAmount >= ((8001 * 1000) / rate) && receiveAmount <= ((10000 * 1000) / rate)) { transactionFee2 = 95; }
+else if (receiveAmount >= ((1201 * 1000) / rate) && receiveAmount <= ((3000 * 1000) / rate)) { transactionFee2 = 25; }
+else if (receiveAmount >= ((3001 * 1000) / rate) && receiveAmount <= ((5000 * 1000) / rate)) { transactionFee2 = 40; }
+else if (receiveAmount >= ((5001 * 1000) / rate) && receiveAmount <= ((8000 * 1000) / rate)) { transactionFee2 = 60; }
+else if (receiveAmount >= ((8001 * 1000) / rate) && receiveAmount <= ((10000 * 1000) / rate)) { transactionFee2 = 80; }
 }
 
 //(GHANA to BCB)
@@ -38,10 +38,10 @@ if (receiveAmount >= ((rate * 1000) / rate) && receiveAmount <= ((150 * 1000) / 
 else if (receiveAmount >= ((151 * 1000) / rate) && receiveAmount <= ((500 * 1000) / rate)) { transactionFee2 = 15; }
 else if (receiveAmount >= ((501 * 1000) / rate) && receiveAmount <= ((800 * 1000) / rate)) { transactionFee2 = 20; }
 else if (receiveAmount >= ((801 * 1000) / rate) && receiveAmount <= ((1200 * 1000) / rate)) { transactionFee2 = 25; }
-else if (receiveAmount >= ((1201 * 1000) / rate) && receiveAmount <= ((2000 * 1000) / rate)) { transactionFee2 = 40; }
-else if (receiveAmount >= ((2001 * 1000) / rate) && receiveAmount <= ((5000 * 1000) / rate)) { transactionFee2 = 50; }
+else if (receiveAmount >= ((1201 * 1000) / rate) && receiveAmount <= ((3000 * 1000) / rate)) { transactionFee2 = 40; }
+else if (receiveAmount >= ((3001 * 1000) / rate) && receiveAmount <= ((5000 * 1000) / rate)) { transactionFee2 = 50; }
 else if (receiveAmount >= ((5001 * 1000) / rate) && receiveAmount <= ((8000 * 1000) / rate)) { transactionFee2 = 80; }
-else if (receiveAmount >= ((8001 * 1000) / rate) && receiveAmount <= ((10000 * 1000) / rate)) { transactionFee2 = 120; }
+else if (receiveAmount >= ((8001 * 1000) / rate) && receiveAmount <= ((10000 * 1000) / rate)) { transactionFee2 = 100; }
 }
 //(ALL COUNTRIES to GHANA)
 else if (currency === "GHS") {
@@ -51,9 +51,9 @@ else if ((receiveAmount >= ((rate2 * 6001) / 1000) && receiveAmount <= ((rate2 *
 else if ((receiveAmount >= ((rate2 * 20001) / 1000) && receiveAmount <= ((rate2 * 40000) / 1000))) { transactionFee2 = 2000; }
 else if ((receiveAmount >= ((rate2 * 40001) / 1000) && receiveAmount <= ((rate2 * 60000) / 1000))) { transactionFee2 = 3000; }
 else if ((receiveAmount >= ((rate2 * 60001) / 1000) && receiveAmount <= ((rate2 * 100000) / 1000))) { transactionFee2 = 4000; }
-else if ((receiveAmount >= ((rate2 * 100001) / 1000) && receiveAmount <= ((rate2 * 200000) / 1000))) { transactionFee2 = 5000; }
-else if ((receiveAmount >= ((rate2 * 200001) / 1000) && receiveAmount <= ((rate2 * 400000) / 1000))) { transactionFee2 = 8000; }
-else if ((receiveAmount >= ((rate2 * 400001) / 1000) && receiveAmount <= ((rate2 * 500000) / 1000))) { transactionFee2 = 10000; }
+else if ((receiveAmount >= ((rate2 * 100001) / 1000) && receiveAmount <= ((rate2 * 300000) / 1000))) { transactionFee2 = 5000; }
+else if ((receiveAmount >= ((rate2 * 300001) / 1000) && receiveAmount <= ((rate2 * 400000) / 1000))) { transactionFee2 = 7000; }
+else if ((receiveAmount >= ((rate2 * 400001) / 1000) && receiveAmount <= ((rate2 * 500000) / 1000))) { transactionFee2 = 8000; }
 }
 return transactionFee2;
 }
